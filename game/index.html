@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Amber Vault — a three-room heist</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #070b14; }
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: system-ui, sans-serif;
+    color: #e8e4d8;
+  }
+  #game {
+    width: min(960px, 96vw);
+    height: auto;
+    image-rendering: auto;
+    background: #0b1220;
+    box-shadow: 0 0 60px rgba(201, 162, 39, 0.15);
+  }
+  #help {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #8fa3c8;
+    text-align: center;
+    max-width: 960px;
+  }
+  #help b { color: #e8e4d8; }
+</style>
+</head>
+<body>
+<canvas id="game" width="960" height="640"></canvas>
+<p id="help"><b>The Amber Vault</b> — cross three rooms, lift the loot, dodge the guards and cameras, and run for the green getaway door.
+Move with <b>WASD / arrows</b> or <b>click to walk</b>. <b>[1] smoke</b> hides you, <b>[2] jammer</b> blinds the cameras — both make noise. Green shadow hides you. <b>M</b> mute, <b>P</b> pause.</p>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
